@@ -1,0 +1,71 @@
+/* util */
+.sr-only {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+input, button, a, label{
+    cursor: pointer;
+}
+
+
+/* //util */
+
+/* header 시작 */
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color : #f6f5ef;
+    height: 120px;
+
+}
+
+.header-wrapper {
+    height: 120px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.info-cont {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 80px;
+}
+.info-cont .info-items {
+    margin: 0 20px;
+}
+.info-cont .info-items:nth-child(2n-1):after
+, .info-cont .info-items:nth-child(2):after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    border-right: 1px solid rgb(206, 203, 203);
+    margin-left: 20px;
+}
+
+.nav-cont {
+    display: flex;
+    margin-bottom: 35px;
+}
+.nav-cont .nav-items {
+    margin: 0 20px;
+}
+
+/* //header 끝 */
