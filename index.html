@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="src/style/style.css">
+
 </head>
 <body>
     <header class="header">
@@ -36,25 +38,39 @@
         </section>
     </header>
     <main>
-        <section>
-            <h2>카드</h2>
-            홈 아이콘 > <a href="/">MENU</a> > 카드
-            <form action="">
-                <legend>분류보기</legend>
-                <button>아이콘</button>
+        <section class="card-top-cont">
+            <header class="card-header-cont">
+                <h2>카드</h2>
+                <div class="card-nav">
+                    <i class="fas fa-home"></i> > <a href="/">MENU</a> > 카드
+                </div>
+            </header>
+            <form action="" class="select-section">
+                <div class="select-top">
+                    <legend>분류보기</legend>
+                    <button>아이콘</button>
+                </div>
                 <hr>
-                <button>카테고리</button>
-                <button>테마</button>
-                <input type="checkbox" name="all-check" id="all-check">
-                <label for="all-check"> 전체 상품보기</label>
-                <input type="checkbox" name="real" id="real">
-                <label for="real"> 실물카드</label>
-                <input type="checkbox" name="e-gift" id="e-gift">
-                <label for="e-gift"> e-Gift카드</label>
+                <div class="select-bottom">
+                    <div class="btn-cont">
+                        <button type="button" class="select-btn1">카테고리</button>
+                        <button type="button" class="select-btn2">테마</button>
+                    </div>
+                    <div class="checkbox-cont">
+                        <input type="checkbox" name="all-check" id="all-check">
+                        <label for="all-check"> 전체 상품보기</label>
+                        <input type="checkbox" name="real" id="real">
+                        <label for="real"> 실물카드</label>
+                        <input type="checkbox" name="e-gift" id="e-gift">
+                        <label for="e-gift"> e-Gift카드</label>
+                    </div>
+                </div>
             </form>
         </section>
 
     </main>
     <footer></footer>
+
+    <script src="src/style/main.js"></script>
 </body>
 </html>

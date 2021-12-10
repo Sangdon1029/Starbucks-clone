@@ -9,7 +9,11 @@
 input, button, a, label{
     cursor: pointer;
 }
-
+a {
+    text-decoration: none;
+    color: #006633;
+    font-weight: 700;
+}
 
 /* //util */
 
@@ -69,3 +73,62 @@ input, button, a, label{
 }
 
 /* //header 끝 */
+
+/* main 시작 */
+
+
+.card-top-cont {
+    width: 1100px;
+    margin: 20px auto;
+}
+
+.card-header-cont {
+    margin-bottom: 20px;
+    position: relative;
+}
+.card-header-cont h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+.card-header-cont .card-nav {
+    position: absolute;
+    right: 0;
+}
+
+.select-section {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+.select-section .select-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.select-section hr {
+    margin-bottom:  20px;
+}
+
+.select-section .select-bottom {
+
+}
+
+.select-section .select-bottom .btn-cont {
+    margin-bottom: 20px;
+}
+.select-section .select-bottom .btn-cont button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #f4f4f1;
+    border:none;
+    border-radius: 5px;
+}
+.select-section .select-bottom .btn-cont button.focus {
+    background-color: #006633;
+    color: #f4f4f1;
+}
