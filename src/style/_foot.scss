@@ -50,14 +50,18 @@
                     color: rgb(167, 164, 164);
                     font-size: 13px;
                 }
-                li::after {
+                li::after{
                     content: '';
-                    display: block;
+                    display: inline-block;
                     width: 1px;
                     height: 10px;
                     border-right: 1px solid gray;
+                    margin: 0 10px;
                 }
-                
+                li:last-child::after {
+                    content: '';
+                    display: none;
+                }
             }
             .foot-maps {
                 display: flex;

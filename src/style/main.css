@@ -138,10 +138,16 @@
 
 .footer-cont .footer-info .foot-info-wrapper .foot-terms li::after {
   content: '';
-  display: block;
+  display: inline-block;
   width: 1px;
   height: 10px;
   border-right: 1px solid gray;
+  margin: 0 10px;
+}
+
+.footer-cont .footer-info .foot-info-wrapper .foot-terms li:last-child::after {
+  content: '';
+  display: none;
 }
 
 .footer-cont .footer-info .foot-info-wrapper .foot-maps {

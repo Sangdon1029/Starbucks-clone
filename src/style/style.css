@@ -15,6 +15,9 @@ a {
     font-weight: 700;
 }
 
+
+
+
 /* //util */
 
 /* header 시작 */
@@ -131,12 +134,34 @@ a {
     font-weight: 700;
 }
 
+/* 버튼 애니메이션 */
+.slect-dropdown  {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 100;
+   
+}
+
+.select-section .select-top .slect-dropdown.rotate {
+    transform: rotate(180deg);
+    transition: all ease 1s;
+}
+
+.select-section .select-top .slect-dropdown.rotate2 {
+    transform: rotate(0deg);
+    transition: all ease 1s;
+} 
+
+
 .select-section hr {
     margin-bottom:  20px;
 }
 
-.select-section .select-bottom {
-
+.select-section .select-bottom.bottom-dropdown {
+    display: none;
 }
 
 .select-section .select-bottom .btn-cont {

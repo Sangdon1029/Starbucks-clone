@@ -12,3 +12,17 @@ btn2.addEventListener('click', function(){
         btn1.classList.remove('focus');
         btn2.classList.toggle('focus');
 }})
+
+const dropdown = document.querySelector(".slect-dropdown")
+const select_dropdown = document.querySelector(".select-bottom")
+dropdown.addEventListener('click', function(){
+    if(dropdown.classList.contains("rotate")){
+        dropdown.classList.remove('rotate');
+        dropdown.classList.add('rotate2');
+        select_dropdown.classList.remove('bottom-dropdown')
+    } else {
+        dropdown.classList.add('rotate');
+        dropdown.classList.remove('rotate2');
+        select_dropdown.classList.add('bottom-dropdown')
+    }
+})
