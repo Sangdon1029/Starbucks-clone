@@ -26,7 +26,9 @@ a {
 .header {
     background-color : #f6f5ef;
     height: 120px;
-
+    position: fixed;
+    width: 100vw;
+    top:0;
 }
 
 .header-wrapper {
@@ -93,7 +95,9 @@ a {
 
 .card-top-cont {
     width: 1100px;
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-bottom: 150px;
+    position: relative;
 }
 
 .card-header-cont {

@@ -4,37 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>스타벅스</title>
     <link rel="stylesheet" href="src/style/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/main.css">
 
 </head>
 <body>
     <header class="header">
         <section class="header-wrapper">
-            <section class="logo">
+            <div class="logo">
                 <h1 class="sr-only">스타벅스에 오신 것을 환영합니다</h1>
-                <a href="/"><img src="src/img/logo.png" alt="스타벅스 로고입니다"></a>
-            </section> <!--logo 이미지는 고정-->
-            <section class="header-item-wrapper">
+                <a href="#"><img src="src/img/logo.png" alt="스타벅스 로고입니다"></a>
+            </div> <!--logo 이미지는 고정-->
+            <article class="header-item-wrapper">
+                <h2 class="sr-only">상단 메뉴</h2>
                 <ul class="info-cont">
-                    <li class="info-items"><a href="/none"> Sign In </a></li>
-                    <li class="info-items"><a href="/none"> My Starbucks </a></li>
-                    <li class="info-items"><a href="/none"> Customer Service & Ideas </a></li>
-                    <li class="info-items"><a href="/none"> Find a Store </a></li>
+                    <li class="info-items"><a href="#none"> Sign In </a></li>
+                    <li class="info-items"><a href="#none"> My Starbucks </a></li>
+                    <li class="info-items"><a href="#none"> Customer Service & Ideas </a></li>
+                    <li class="info-items"><a href="#none"> Find a Store </a></li>
                 </ul>
+                <!-- gnb -->
                 <nav>  <!--hover했을때 dropdown + 색 변경-->
                     <ul class="nav-cont">
-                        <li class="nav-items"><a href="/none"> COFFE </a></li>
-                        <li class="nav-items"><a href="/none"> MENU </a></li>
-                        <li class="nav-items"><a href="/none"> STORE </a></li>
-                        <li class="nav-items"><a href="/none"> RESPONSIBILITY </a></li>
-                        <li class="nav-items"><a href="/none"> STARBUCKS REWARDS </a></li>
-                        <li class="nav-items"><a href="/none"> WHAT'S NEW </a></li>
+                        <li class="nav-items"><a href="#none"> COFFEE </a></li>
+                        <li class="nav-items"><a href="#none"> MENU </a></li>
+                        <li class="nav-items"><a href="#none"> STORE </a></li>
+                        <li class="nav-items"><a href="#none"> RESPONSIBILITY </a></li>
+                        <li class="nav-items"><a href="#none"> STARBUCKS REWARDS </a></li>
+                        <li class="nav-items"><a href="#none"> WHAT'S NEW </a></li>
                     </ul>
                 </nav>
-            </section>
+                <!-- //gnb -->
+            </article>
         </section>
     </header>
     <main>
@@ -42,16 +46,18 @@
             <header class="card-header-cont">
                 <h2>카드</h2>
                 <div class="card-nav">
-                    <i class="fas fa-home"></i> > <a href="/">MENU</a> > 카드
+                    <a href="#none"><i class="fas fa-home"></i></a> > <a href="/">MENU</a> > <a href="#none">카드</a>
                 </div>
             </header>
             <form action="" class="select-section">
                 <div class="select-top">
+                    <!-- 추후에 submit으로 변경 가능한 구역이여서 form태그로 작성하였습니다 -->
                     <legend>분류보기</legend>
-                    <button>아이콘</button>
+                    <button>접는 아이콘</button>
                 </div>
                 <hr>
                 <div class="select-bottom">
+                    <!-- 아이콘을 클릭했을 때 하단 부분을 접는 기능을 추가하기 위해서 div태그를 이용하여 감사주었습니다. -->
                     <div class="btn-cont">
                         <button type="button" class="select-btn1">카테고리</button>
                         <button type="button" class="select-btn2">테마</button>
@@ -75,82 +81,143 @@
                     </ul> -->
             </div>
         </section>
-        <section>
-            <h3>실물카드</h3>
-            <ul>
+        <section class="card-section-cont">
+            <!-- 이 부분 부터 SCSS로 관리 하겠습니다. -->
+            <h3 class="card-real-txt">실물카드</h3>
+            <ul class="card-item-cont">
                 <li>
                     <figure class="">
-                        <img src="/none" alt="">
-                        <caption>2021 크리스마스 캣츠 카드</caption>
+                        <a href="#none"><img src="src/img/card-real-img/1.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
                     </figure>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/2.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/3.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/4.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/5.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/6.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/7.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/8.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/9.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/10.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/11.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="/src/img/card-real-img/12.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
             </ul>
             <!-- 한번에 보여주는 목록이 너무 많아서 정신이 없다고 생각되어 
             화살표 또는 번호를 누르면 페이지 전환 되는 형식으로 기능 변환 예정 -->
             <ul class="arrow-nav">
-                <a href="/none">화살표 아이콘</a>
-                <a href="/none"><li class="arrow-nav-items">1</li></a>
-                <a href="/none"><li class="arrow-nav-items">2</li></a>
-                <a href="/none"><li class="arrow-nav-items">3</li></a>
-                <a href="/none"><li class="arrow-nav-items">4</li></a>
-                <a href="/none"><li class="arrow-nav-items">5</li></a>
-                <a href="/none"><li class="arrow-nav-items">6</li></a>
-                <a href="/none">화살표 아이콘</a>
+                <li><a href="#none"><i class="fas fa-chevron-left"></i></a></li>
+                <li class="arrow-nav-items"><a href="#none">1</a></li>
+                <li class="arrow-nav-items"><a href="#none">2</a></li>
+                <li class="arrow-nav-items"><a href="#none">3</a></li>
+                <li class="arrow-nav-items"><a href="#none">4</a></li>
+                <li class="arrow-nav-items"><a href="#none">5</a></li>
+                <li class="arrow-nav-items"><a href="#none">6</a></li>
+                <li><a href="#none"><i class="fas fa-chevron-right"></i></a></li>
             </ul>
         </section>
     </main>
     <footer>
         <section>
-            <ul>
-                <!-- table로 짜는게 맞을 것 같은데 배치를 하는 측면에서 번거러울것 같아 li로 작성하였습니다 -->
-                <p>COMPANY</p>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <p>CORPORATE SALES</p>
-                <li>단기 및 기업 구매 안내</li>
-            </ul>
-            <ul>
-                <p>PARTNERSHIP</p>
-                <li>신규 입점 제의</li>
-                <li>협력 고객사 등록신청</li>
-            </ul>
-            <ul>
-                <p>ONLINE COMMUNITY</p>
-                <li>페이스북</li>
-                <li>트위터</li>
-                <li>유튜브</li>
-                <li>인스타그램</li>
-            </ul>
-            <ul>
-                <p>RECRUIT</p>
-                <li>채용 소개</li>
-                <li>채용 지원하기</li>
-            </ul>
-        </section>
-        <section>
+            <article>
+                <h3 class="sr-only">기타 페이지 바로가기</h3>
+                <ul>
+                    <li><strong>COMPANY</strong></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <!-- li빼고는 사용하면 안됩니다 -->
+                    <p>CORPORATE SALES</p>
+                    <li>단기 및 기업 구매 안내</li>
+                </ul>
+                <ul>
+                    <p>PARTNERSHIP</p>
+                    <li>신규 입점 제의</li>
+                    <li>협력 고객사 등록신청</li>
+                </ul>
+                <ul>
+                    <p>ONLINE COMMUNITY</p>
+                    <li>페이스북</li>
+                    <li>트위터</li>
+                    <li>유튜브</li>
+                    <li>인스타그램</li>
+                </ul>
+                <ul>
+                    <p>RECRUIT</p>
+                    <li>채용 소개</li>
+                    <li>채용 지원하기</li>
+                </ul>
+            </article>
+        
+        <article>
+            <h3 class="sr-only">수상내역</h3>
             <ul>
                 <li>
                     <!-- 전체를 이미지로 할 수 있을 것같은데 이미지 깨짐을 방지 하기 위해서 -->
                     <figure>
-                        <img src="/none" alt="">
+                        <img src="#none" alt="">
                         <p>2020대한민국 일자리대상</p>
-                        <caption>여성가족부장관상</caption>
+                        <figcaption>여성가족부장관상</figcaption>
                     </figure>
                 </li>
                 <li></li>
@@ -159,34 +226,38 @@
                 <li></li>
                 <li></li>
             </ul>
-        </section>
-        <section>
+        </article>
+        <article>
+            <h3 class="sr-only">회사정보</h3>
             <ul>
-                <li><a href="/none">개인정보처리방침</a></li>
-                <li><a href="/none">영상정보처리기기 운영관리 방침</a></li>
-                <li><a href="/none">홈페이지 이용약관</a></li>
-                <li><a href="/none">위치정보 이용약관</a></li>
-                <li><a href="/none">스타벅스 카드 이용약관</a></li>
-                <li><a href="/none">비회원 이용약관</a></li>
-                <li><a href="/none">My DT Pass 서비스 이용약관</a></li>
-                <li><a href="/none">윤리경영 핫라인</a></li>
+                <li><a href="#none">개인정보처리방침</a></li>
+                <li><a href="#none">영상정보처리기기 운영관리 방침</a></li>
+                <li><a href="#none">홈페이지 이용약관</a></li>
+                <li><a href="#none">위치정보 이용약관</a></li>
+                <li><a href="#none">스타벅스 카드 이용약관</a></li>
+                <li><a href="#none">비회원 이용약관</a></li>
+                <li><a href="#none">My DT Pass 서비스 이용약관</a></li>
+                <li><a href="#none">윤리경영 핫라인</a></li>
             </ul>
             <ul>
                 <!-- button으로 하지 않은 이유 : 눌렀을 때 변경되거나 기능을 추가하는 것이 아니라고 생각해서 입니다 -->
-                <li><a href="/none">찾아오시는 길</a></li>
-                <li><a href="/none">신규입점제의</a></li>
-                <li><a href="/none">사이트 맵</a></li>
+                <li><a href="#none">찾아오시는 길</a></li>
+                <li><a href="#none">신규입점제의</a></li>
+                <li><a href="#none">사이트 맵</a></li>
             </ul>
-            <address>
-                <ul>
-                    <li>사업자등록번호 : 201-81-1111</li>
-                    <li>(주)스타벅스커피 코리아 대표이사: </li>
-                    <li>TEL : 1522-9999</li>
-                    <li>개인정보 책임자 :***</li>
-                </ul>
-            </address>
-            <p>ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</p>
-        </section>
+            <dl>
+                <dt>사업자등록번호 :</dt>
+                <dd>201-81-0000</dd>
+                <dt>(주)수타벅스커피 코리아 대표이사: </dt>
+                <dd>이름</dd>
+                <dt>TEL : </dt>
+                <dd>1522-0000</dd>
+                <dt>개인정보 책임자 :</dt>
+                <dd>이름</dd>
+            </dl>
+            <small>ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</small>
+        </article>
+    </section>
     </footer>
 
     <script src="src/style/main.js"></script>
