@@ -1,5 +1,7 @@
 # Starbucks-clone
-## Anyone can comment_whatever you do_I don't mind
+## 스타벅스 홈페이지 클론입니다.
+
+### 
 
 
 [Index.page](https://sangdon1029.github.io/Starbucks-clone/)
