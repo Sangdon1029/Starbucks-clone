@@ -1,0 +1,80 @@
+.footer-cont {
+    width: 100vw;
+    .footer-others {
+        background-color:#2C2A29;
+        .others-wrapper{
+            width: 1100px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            ul {
+                padding: 30px;
+                a {
+                    font-weight: 300;
+                    color: white;
+                    font-size: 13px;
+                }
+                strong>a{
+                    display: block;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    font-weight: 800;
+                }
+                
+            }
+        }
+    }
+    .footer-awards {
+        background-color: #282828;;
+        .awards-wrapper {
+            padding: 20px;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+    .footer-info {
+        background-color: #2C2A29;
+        .foot-info-wrapper {
+            .foot-terms {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                font-size: 13px;
+                .first-deco {
+                    color: #00b050;
+                }
+                a{
+                    color: rgb(167, 164, 164);
+                    font-size: 13px;
+                }
+                li::after {
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 10px;
+                    border-right: 1px solid gray;
+                }
+                
+            }
+            .foot-maps {
+                display: flex;
+                justify-content: center;
+                li { 
+                    width: 130px;
+                    margin: 30px 10px;
+                    padding: 8px;
+                    border: 2px solid white;
+                    border-radius: 5px;
+                    text-align: center;
+                    a {
+                        color: white;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

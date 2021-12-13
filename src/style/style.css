@@ -24,11 +24,12 @@ a {
 }
 
 .header {
-    background-color : #f6f5ef;
     height: 120px;
-    position: fixed;
     width: 100vw;
+    position: fixed;
+    background-color : #f6f5ef;
     top:0;
+    z-index: 100;
 }
 
 .header-wrapper {
@@ -98,6 +99,7 @@ a {
     margin: 0px auto;
     margin-bottom: 150px;
     position: relative;
+    margin-top: 200px;
 }
 
 .card-header-cont {

@@ -44,15 +44,126 @@
   display: -ms-flexbox;
   display: flex;
   width: 1100px;
-  background-color: antiquewhite;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  margin: 40px 0;
 }
 
 .card-section-cont .arrow-nav a {
   text-decoration: none;
   font-size: 22px;
+}
+
+.footer-cont {
+  width: 100vw;
+}
+
+.footer-cont .footer-others {
+  background-color: #2C2A29;
+}
+
+.footer-cont .footer-others .others-wrapper {
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.footer-cont .footer-others .others-wrapper ul {
+  padding: 30px;
+}
+
+.footer-cont .footer-others .others-wrapper ul a {
+  font-weight: 300;
+  color: white;
+  font-size: 13px;
+}
+
+.footer-cont .footer-others .others-wrapper ul strong > a {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.footer-cont .footer-awards {
+  background-color: #282828;
+}
+
+.footer-cont .footer-awards .awards-wrapper {
+  padding: 20px;
+}
+
+.footer-cont .footer-awards .awards-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-cont .footer-info {
+  background-color: #2C2A29;
+}
+
+.footer-cont .footer-info .foot-info-wrapper .foot-terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.footer-cont .footer-info .foot-info-wrapper .foot-terms .first-deco {
+  color: #00b050;
+}
+
+.footer-cont .footer-info .foot-info-wrapper .foot-terms a {
+  color: #a7a4a4;
+  font-size: 13px;
+}
+
+.footer-cont .footer-info .foot-info-wrapper .foot-terms li::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 10px;
+  border-right: 1px solid gray;
+}
+
+.footer-cont .footer-info .foot-info-wrapper .foot-maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-cont .footer-info .foot-info-wrapper .foot-maps li {
+  width: 130px;
+  margin: 30px 10px;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.footer-cont .footer-info .foot-info-wrapper .foot-maps li a {
+  color: white;
+  font-size: 13px;
 }
 /*# sourceMappingURL=main.css.map */
