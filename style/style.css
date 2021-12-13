@@ -1,0 +1,203 @@
+/* util */
+.sr-only {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+input, button, a, label{
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #006633;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+
+
+/* //util */
+
+/* header 시작 */
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 120px;
+    width: 100vw;
+    position: fixed;
+    background-color : #f6f5ef;
+    top:0;
+    z-index: 100;
+}
+
+.header-wrapper {
+    height: 120px;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.info-cont {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+}
+.info-cont .info-items {
+    margin: 0 5px;
+}
+.info-cont .info-items:nth-child(2n-1):after
+, .info-cont .info-items:nth-child(2):after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    border-right: 1px solid rgb(206, 203, 203);
+    margin-left: 10px;
+}
+
+.nav-cont {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+.nav-cont .nav-items {
+    height: 60px;
+    text-align: center;
+    line-height: 0px;
+    padding:  20px;
+}
+.nav-cont .nav-items a {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    
+}
+.nav-cont .nav-items:hover {
+    text-decoration: white underline;
+}
+
+.nav-cont .nav-items:hover a
+, .nav-cont .nav-items:hover{
+    background-color: #2c2a29;
+    color: #669900;
+}
+
+/* //header 끝 */
+
+/* main 시작 */
+
+
+.card-top-cont {
+    width: 1100px;
+    margin: 0px auto;
+    margin-bottom: 150px;
+    position: relative;
+    margin-top: 200px;
+}
+
+.card-header-cont {
+    margin-bottom: 20px;
+    position: relative;
+}
+.card-header-cont h2 {
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+.card-header-cont .card-nav {
+    position: absolute;
+    right: 0;
+}
+
+.select-section {
+    border: 1px solid rgb(212, 211, 211);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.select-section .select-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* 버튼 애니메이션 */
+.slect-dropdown  {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 100;
+   
+}
+
+.select-section .select-top .slect-dropdown.rotate {
+    transform: rotate(180deg);
+    transition: all ease 1s;
+}
+
+.select-section .select-top .slect-dropdown.rotate2 {
+    transform: rotate(0deg);
+    transition: all ease 1s;
+} 
+
+
+.select-section hr {
+    margin-bottom:  20px;
+}
+
+.select-section .select-bottom.bottom-dropdown {
+    display: none;
+}
+
+.select-section .select-bottom .btn-cont {
+    margin-bottom: 20px;
+}
+.select-section .select-bottom .btn-cont button {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #f4f4f1;
+    border:none;
+    border-radius: 5px;
+}
+.select-section .select-bottom .btn-cont button.focus {
+    background-color: #006633;
+    color: #f4f4f1;
+}
+
+.card-top-cont .selet-option-btn {
+    float: right;
+  
+}
+
+.card-top-cont .selet-option-btn button {
+    width: 230px;
+    height: 40px;
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 211, 211);
+}
