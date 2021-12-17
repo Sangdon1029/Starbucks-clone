@@ -3,29 +3,42 @@
     .footer-others {
         background-color:#2C2A29;
         .others-wrapper{
-            width: 1100px;
+            width: 1200px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             margin: 0 auto;
             ul {
-                padding: 30px;
+                padding-top: 45px;
+                padding-bottom: 50px;
                 a {
                     font-weight: 300;
                     color: white;
-                    font-size: 13px;
+                    font-size: 11px;
+                    line-height: 25px;
                 }
                 strong>a{
                     display: block;
-                    margin-bottom: 20px;
-                    font-size: 16px;
-                    font-weight: 800;
+                    margin-bottom: 15px;
+                    line-height: 10px;
+                    font-size: 14px;
+                    font-weight: 500;
                 }
                 
             }
         }
+        .others-wrapper::after{
+            content: '';
+            display: inline-block;
+            background-image: url(/src/img/footer_logo.png);
+            margin-top: 30px;
+            margin-left: 20px;
+            height: 200px;
+            width: 100px;
+            background-repeat: no-repeat;
+        }
     }
     .footer-awards {
-        background-color: #282828;;
+        background-color: #282828;
         .awards-wrapper {
             padding: 20px;
             ul {
@@ -36,6 +49,7 @@
         }
     }
     .footer-info {
+        padding-top: 30px;
         background-color: #2C2A29;
         .foot-info-wrapper {
             .foot-terms {
@@ -48,7 +62,9 @@
                 }
                 a{
                     color: rgb(167, 164, 164);
-                    font-size: 13px;
+                    font-size: 11px;
+                    word-spacing : -5px;
+                    font-weight: 800;
                 }
                 li::after{
                     content: '';
@@ -61,6 +77,8 @@
                 li:last-child::after {
                     content: '';
                     display: none;
+                    // not 선택자
+                    // li 끼리 ~ 형제선택자 공부! 
                 }
             }
             .foot-maps {
@@ -78,6 +96,22 @@
                         font-size: 13px;
                     }
                 }
+            }
+            .addre {
+                color: #999;;
+                font-size: 11px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+
+            }
+            small {
+                display: flex;
+                justify-content: center;
+                color: #999;;
+                font-size: 11px;
+                text-align: center;
+                padding-bottom: 50px;
             }
         }
     }

@@ -9,22 +9,28 @@
 input, button, a, label{
     cursor: pointer;
 }
+
+
+
+* {
+    font-family: 'NanumBarunGothic', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+
 a {
     text-decoration: none;
     color: #006633;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 13px;
 }
-
-
-
-
 /* //util */
 
 /* header 시작 */
 
-* {
-    box-sizing: border-box;
-}
+
 
 .header {
     height: 120px;
@@ -33,9 +39,11 @@ a {
     background-color : #f6f5ef;
     top:0;
     z-index: 100;
+    border-top: 2px solid black;
 }
 
 .header-wrapper {
+    position: relative;
     height: 120px;
     width: 1100px;
     display: flex;
@@ -43,6 +51,8 @@ a {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 10px;
+    z-index: 200;
+
 }
 
 .header-item-wrapper {
@@ -55,42 +65,171 @@ a {
 .info-cont {
     margin-top: 20px;
     display: flex;
-    margin-left: 80px;
+    justify-content: end;
+    margin-right: 100px;
+    position: relative;
 }
 .info-cont .info-items {
-    margin: 0 20px;
+    margin: 0 5px;
+    color: #666;
+    clear: both;
+
 }
-.info-cont .info-items:nth-child(2n-1):after
-, .info-cont .info-items:nth-child(2):after {
+/* .info-cont .search {
+
+} */
+.info-cont li>a:after{
     content: '';
     display: inline-block;
     width: 1px;
-    height: 15px;
+    height: 13px;
     border-right: 1px solid rgb(206, 203, 203);
-    margin-left: 20px;
+    margin-left: 10px;
 }
+
+.info-cont li:nth-child(n+4)>a:after
+{
+    content: '';
+    display: none;
+}
+
+.search-input {
+    display: none;
+}
+.search-input.on{
+    position: absolute;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background-color: white;
+    border: 1px solid rgb(206, 203, 203);
+    border-radius: 5px;
+    padding: 5px;
+    transform: translateY(-5px);
+}
+
+.search-btn.on {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    transform: translateY(0);
+}
+
+.search-cont {
+    display: inline-block;
+}
+.search-cont.on {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    border: 1px solid rgb(206, 203, 203);
+    border-radius: 5px;
+    background-color: white;
+    transform: translateY(-5px);
+}
+
+
+
+
 
 .nav-cont {
     display: flex;
-    margin-bottom: 35px;
     justify-content: space-around;
+    margin-right: 50px;
 }
 .nav-cont .nav-items {
-    margin: 32px 0;
-    height: 50px;
+
     text-align: center;
-    line-height: 30px;
+    line-height: 0px;
+    padding:  20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 .nav-cont .nav-items a {
-    font-size: 15px;
-
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    
+}
+.nav-cont .nav-items:hover {
+    text-decoration: underline;
 }
 
-.nav-cont .nav-items:hover a
+.nav-cont .nav-items:hover .ancho
 , .nav-cont .nav-items:hover{
-    background-color: #006633;
-    color: #f6f5ef;
+    background-color: #2c2a29;
+    color: #669900;
 }
+
+
+/* dropdonw-nav 작성 */
+
+
+.nav-cont .nav-items .sub-nav-items {
+    top: 120px;
+    left: 0;
+    width: 100%;
+    /* dropdown-bar 이미지 깨짐 방지 */
+    min-width: 800px;
+    display: none;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #2c2a29;
+    z-index: 100;
+}
+
+.nav-cont .nav-items:hover .sub-nav-items{
+    display: flex;
+    width: 100vw;
+}
+.sub-nav-items-cont {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-cont .nav-items:hover .sub-nav-items ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.sub-nav-items ul li {
+    display: flex;
+    height: 20px;
+    color: #999999;
+}
+
+.sub-nav-items .sub-nav-items-cont ul li a{
+    color: #999999;
+}
+.sub-nav-items ul li:first-child a{
+    color: #fff;
+    font-size: 16px;
+
+    /* line-height 는 negative: 를 지원하지 않습니다; */
+}
+.sub-nav-items ul li:first-child {
+    display: block;
+    height: 40px;
+    text-align: start;
+    margin-top: 10px;
+}
+
+
+
+
 
 /* //header 끝 */
 
@@ -102,7 +241,7 @@ a {
     margin: 0px auto;
     margin-bottom: 150px;
     position: relative;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .card-header-cont {
@@ -110,8 +249,8 @@ a {
     position: relative;
 }
 .card-header-cont h2 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 600;
     
 }
 .card-header-cont .card-nav {
@@ -142,7 +281,6 @@ a {
     border-radius: 50px;
     font-size: 30px;
     font-weight: 100;
-   
 }
 
 .select-section .select-top .slect-dropdown.rotate {

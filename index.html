@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스타벅스</title>
-    <link rel="stylesheet" href="src/style/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style/reset.css">
     <link rel="stylesheet" href="src/style/style.css">
     <link rel="stylesheet" href="src/style/main.css">
+    <style>
+        
+    </style>
 </head>
 <body>
     <header class="header">
+        <div class="test123">
         <section class="header-wrapper">
             <div class="logo">
                 <h1 class="sr-only">스타벅스에 오신 것을 환영합니다</h1>
@@ -20,25 +24,84 @@
             <article class="header-item-wrapper">
                 <h2 class="sr-only">상단 메뉴</h2>
                 <ul class="info-cont">
-                    <li class="info-items"><a href="#none"> Sign In </a></li>
-                    <li class="info-items"><a href="#none"> My Starbucks </a></li>
-                    <li class="info-items"><a href="#none"> Customer Service & Ideas </a></li>
-                    <li class="info-items"><a href="#none"> Find a Store </a></li>
+                    <li><a class="info-items" href="#none"> Sign In </a></li>
+                    <li><a class="info-items" href="#none"> My Starbucks </a></li>
+                    <li><a class="info-items" href="#none"> Customer Service & Ideas </a></li>
+                    <li><a class="info-items" href="#none"> Find a Store </a></li>
+                    <li>
+                        <div class="search-cont">
+                            <form action="#">
+                                <input class="search-input" type="search" placeholder="통합검색" name="search">
+                                <button class="search-btn" type="submit" ><i class="fas fa-search search"></i></button>
+                            </form>
+                        </div>
+                    </li>
                 </ul>
                 <!-- gnb -->
                 <nav>  <!--hover했을때 dropdown + 색 변경-->
                     <ul class="nav-cont">
-                        <li class="nav-items"><a href="#none"> COFFEE </a></li>
-                        <li class="nav-items"><a href="#none"> MENU </a></li>
-                        <li class="nav-items"><a href="#none"> STORE </a></li>
-                        <li class="nav-items"><a href="#none"> RESPONSIBILITY </a></li>
-                        <li class="nav-items"><a href="#none"> STARBUCKS REWARDS </a></li>
-                        <li class="nav-items"><a href="#none"> WHAT'S NEW </a></li>
+                        <li class="nav-items"><a href="#none" class="ancho"> COFFEE </a></li>
+                        <li class="nav-items menu">
+                            <a href="#none" class="ancho"> MENU </a>
+                            <div class="sub-nav-items on">
+                                <div class="sub-nav-items-cont">
+                                    <ul>
+                                        <li><a href="#none"><strong>음료</strong></a></li>
+                                        <li><a href="#none">콜드 브루</a></li>
+                                        <li><a href="#none">브루드 커피</a></li>
+                                        <li><a href="#none">에스프레소</a></li>
+                                        <li><a href="#none">프라푸치노</a></li>
+                                        <li><a href="#none">블렌디드</a></li>
+                                        <li><a href="#none">스타벅스 피지오</a></li>
+                                        <li><a href="#none">티(티바나)</a></li>
+                                        <li><a href="#none">기타 제조 음료</a></li>
+                                        <li><a href="#none">스타벅스 주스(병음료)</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-nav-item-first"><a href="#none">푸드</a></li>
+                                        <li><a href="#none">브레드</a></li>
+                                        <li><a href="#none">케이크</a></li>
+                                        <li><a href="#none">샌드위치 & 샐러드</a></li>
+                                        <li><a href="#none">따뜻한 푸드</a></li>
+                                        <li><a href="#none">과일 & 요거트</a></li>
+                                        <li><a href="#none">스낵 & 미니 디저트</a></li>
+                                        <li><a href="#none">아이스크림</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-nav-item-first"><a href="#none">상품</a></li>
+                                        <li><a href="#none">머그</a></li>
+                                        <li><a href="#none">글라스</a></li>
+                                        <li><a href="#none">플라스틱 텀블러</a></li>
+                                        <li><a href="#none">스테인리스 텀블러</a></li>
+                                        <li><a href="#none">보온병</a></li>
+                                        <li><a href="#none">액세서리</a></li>
+                                        <li><a href="#none">커피 용품</a></li>
+                                        <li><a href="#none">패키지 티(타바나)</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-nav-item-first"><a href="#none">카드</a></li>
+                                        <li><a href="#none">실물카드</a></li>
+                                        <li><a href="#none">e-Gift카드</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="sub-nav-item-first"><a href="#none">메뉴이야기</a></li>
+                                        <li><a href="#none">나이트로 콜드브루</a></li>
+                                        <li><a href="#none">콜드 브루</a></li>
+                                        <li><a href="#none">스타벅스 티바나</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-items"><a href="#none" class="ancho"> STORE </a></li>
+                        <li class="nav-items"><a href="#none" class="ancho"> RESPONSIBILITY </a></li>
+                        <li class="nav-items"><a href="#none" class="ancho"> STARBUCKS REWARDS </a></li>
+                        <li class="nav-items"><a href="#none" class="ancho"> WHAT'S NEW </a></li>
                     </ul>
                 </nav>
                 <!-- //gnb -->
             </article>
         </section>
+        </div>
     </header>
     <main>
         <section class="card-top-cont">
@@ -74,7 +137,7 @@
             <div class="selet-option-btn">
                 <!-- 버튼을 누르면 드랍다운 형식으로 만들 예정 -->
                 <button type="button">상세분류</button>
-                    <!-- <ul>
+                    <!-- <ul class="detail-asort">
                         <li>신규 출시된 메뉴</li>
                         <li>한정기간 출시되는 시즌성 메뉴</li>
                     </ul> -->
@@ -216,7 +279,7 @@
                     <ul>
                         <li>
                             <!-- 전체를 이미지로 할 수 있을 것같은데 이미지 깨짐을 방지 하기 위해서 -->
-                            <img src="src/img/award/1.jpg" alt="">
+                            <img src="src/img/award/1.jpg" alt="대체텍스트 넣어야되나?">
                                 <!-- 마우스 hover 했을 경우 cursor를 왜 준거지? -->
                         </li>
                         <li>

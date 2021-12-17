@@ -18,11 +18,30 @@ const select_dropdown = document.querySelector(".select-bottom")
 dropdown.addEventListener('click', function(){
     if(dropdown.classList.contains("rotate")){
         dropdown.classList.remove('rotate');
-        dropdown.classList.add('rotate2');
         select_dropdown.classList.remove('bottom-dropdown')
+        dropdown.classList.add('rotate2');
     } else {
         dropdown.classList.add('rotate');
-        dropdown.classList.remove('rotate2');
         select_dropdown.classList.add('bottom-dropdown')
+        dropdown.classList.remove('rotate2');
+    }
+})
+
+//리펙토링은 추후에 해보겠습니다.
+
+// header top util search 
+
+const btn_search = document.querySelector(".search-btn")
+const input_search = document.querySelector(".search-input")
+const cont_search = document.querySelector(".search-cont")
+btn_search.addEventListener('click', function(){
+    if(input_search.classList.contains("on")){
+        input_search.classList.remove('on');
+        btn_search.classList.remove('on');
+        cont_search.classList.remove('on');
+    } else {
+        input_search.classList.add('on');
+        btn_search.classList.add('on');
+        cont_search.classList.add('on');
     }
 })

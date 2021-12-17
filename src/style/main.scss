@@ -1,2 +1,15 @@
+@charset "utf-8";
+@font-face {
+    font-family: NanumBarunGothicBold ;
+    src: url('../font/NanumBarunGothicBold.ttf');
+}
+@font-face {
+    font-family: NanumBarunGothicLight;
+    src: url('../font/NanumBarunGothicLight.ttf');
+}
+@font-face {
+    font-family: NanumBarunGothic;
+    src: url('../font/NanumBarunGothic.ttf');
+}
 @import "card-item";
-@import "foot"
+@import "foot";
