@@ -66,13 +66,14 @@ a {
     margin-top: 20px;
     display: flex;
     justify-content: end;
-    margin-right: 100px;
+    margin-right: 50px;
     position: relative;
 }
 .info-cont .info-items {
-    margin: 0 5px;
+    margin: 0 10px;
     color: #666;
     clear: both;
+
 
 }
 /* .info-cont .search {
@@ -145,17 +146,16 @@ a {
 .nav-cont {
     display: flex;
     justify-content: space-around;
-    margin-right: 50px;
 }
 .nav-cont .nav-items {
-
     text-align: center;
     line-height: 0px;
-    padding:  20px;
-    height: 60px;
+    padding:  25px;
+    height: 65px;
     display: flex;
     justify-content: space-between;
 }
+
 .nav-cont .nav-items a {
     font-size: 13px;
     color: #666;

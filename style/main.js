@@ -47,11 +47,14 @@ btn_search.addEventListener('click', function(){
     }
 })
 
+
 //detail-asort 상세분류 dispaly 속성
 const btn_assort = document.querySelector(".selet-asort-btn")
 const ul_assort = document.querySelector(".detail-asort")
 const li_assort1 = document.querySelector(".asort_li1")
 const li_assort2 = document.querySelector(".asort_li2")
+const option_btn = document.querySelector(".selet-option-btn")
+
 btn_assort.addEventListener('click', function(){
     if(ul_assort.classList.contains("on")){
         ul_assort.classList.remove('on');
@@ -64,26 +67,16 @@ btn_assort.addEventListener('click', function(){
     }
 })
 
-//arrow btn 선택시 ul list 변환
-
-const arrow_btn1 = document.querySelector("arrow_btn1")
-const arrow_btn2 = document.querySelector("arrow_btn2")
-const arrow_btn3 = document.querySelector("arrow_btn3")
-const arrow_btn4 = document.querySelector("arrow_btn4")
-const arrow_btn5 = document.querySelector("arrow_btn5")
-const arrow_btn6 = document.querySelector("arrow_btn6")
-
-const first_page = document.querySelector(".first-page")
-const second_page = document.querySelector(".second-page")
-const third_page = document.querySelector(".third-page")
-const fourth_page = document.querySelector(".fourth-page")
-const fifth_page = document.querySelector(".fifth-page")
-
-const total = document.querySelector("card-section-cont")
-
-arrow_btn1.addEventListener('click', function(){
-    second_page.style.display="none";
-    third_page.style.display="none";
-    fourth_page.style.display="none";
-    fifth_page.style.display="none";
+option_btn.addEventListener('mouseleave',function(){
+    li_assort1.classList.remove('on');
+    li_assort2.classList.remove('on');
+    ul_assort.classList.remove('on');
 })
+
+
+const real = document.querySelector("#real")
+const all_check = document.querySelector("#all-check")
+
+if ( real.hasAttribute("checked")){
+    all_check.removeAttribute("checked");
+}

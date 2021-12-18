@@ -43,15 +43,36 @@
 }
 
 .selet-option-btn .detail-asort li.on {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: inherit;
-  height: 40px;
+  height: 50px;
   padding: 10px;
   -webkit-box-shadow: 1px 1px 1px 1px rgba(128, 125, 125, 0.3);
           box-shadow: 1px 1px 1px 1px rgba(128, 125, 125, 0.3);
   margin-bottom: 2px;
   background-color: white;
   border-radius: 2px;
+}
+
+.selet-option-btn .detail-asort label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selet-option-btn .detail-asort li.on img {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 5px;
 }
 
 .card-section-cont {
@@ -85,6 +106,7 @@
 }
 
 .card-section-cont .card-item-cont figure {
+  position: relative;
   text-align: center;
   font-size: 14px;
   margin-bottom: 20px;
@@ -97,6 +119,21 @@
 
 .card-section-cont .card-item-cont figure figcaption {
   margin: 20px;
+}
+
+.card-section-cont .card-item-cont figure::after {
+  content: '';
+  position: absolute;
+  z-index: 500px;
+  top: 105px;
+  left: 10px;
+  background-image: url(/src/img/mark02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: aqua;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 .card-section-cont .arrow-nav {
@@ -162,7 +199,7 @@
 .footer-cont .footer-others .others-wrapper::after {
   content: '';
   display: inline-block;
-  background-image: url(/src/img/footer_logo.png);
+  background-image: url(src/img/footer_logo.png);
   margin-top: 30px;
   margin-left: 20px;
   height: 200px;
@@ -213,7 +250,6 @@
 .footer-cont .footer-info .foot-info-wrapper .foot-terms a {
   color: #a7a4a4;
   font-size: 11px;
-  word-spacing: -5px;
   font-weight: 800;
 }
 
