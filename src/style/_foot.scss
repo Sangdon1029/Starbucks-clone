@@ -29,7 +29,7 @@
         .others-wrapper::after{
             content: '';
             display: inline-block;
-            background-image: url(src/img/footer_logo.png);
+            background-image: url("/src/img/footer_logo.png");
             margin-top: 30px;
             margin-left: 20px;
             height: 200px;

@@ -183,6 +183,7 @@ a {
     /* dropdown-bar 이미지 깨짐 방지 */
     min-width: 800px;
     display: none;
+    flex-direction: column;
     position: fixed;
     justify-content: space-between;
     background-color: #2c2a29;
@@ -231,6 +232,37 @@ a {
     margin-top: 10px;
 }
 
+.nav-items .sub-nav-items .sub-nav-subtit-cont {
+    width: 100vw;
+    height: 90px;
+    background-color: rgb(180, 40, 40);
+}
+.nav-items .sub-nav-items .sub-nav-subtit-cont ul {
+    width: 90%;
+}
+.nav-items .sub-nav-items .sub-nav-subtit-cont ul li {
+    position: relative;
+    color: rgb(33, 207, 33) ;
+}
+.nav-items .sub-nav-items .sub-nav-subtit-cont ul li a {
+    color: #c4c1c1;
+}
+.nav-items .sub-nav-items .sub-nav-subtit-cont ul li:first-child:after {
+    content: "NEW";
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    width: 25px;
+    height: 13px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    background-color: rgb(72, 109, 18);
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 13px;
+    color: white;
+}
 
 
 
@@ -260,6 +292,13 @@ a {
 .card-header-cont .card-nav {
     position: absolute;
     right: 0;
+    color: gray;
+    font-size: 13px;
+}
+.card-header-cont .card-nav a {
+    color: gray;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 .select-section {
@@ -325,7 +364,6 @@ a {
 
 .card-top-cont .selet-option-btn {
     float: right;
-  
 }
 
 .card-top-cont .selet-option-btn button {

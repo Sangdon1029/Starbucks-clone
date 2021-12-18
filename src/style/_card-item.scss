@@ -83,10 +83,9 @@
             z-index: 500px;
             top: 105px;
             left: 10px;
-            background-image: url(/src/img/mark02.png);
+            background-image: url(src/img/mark02.png);
             background-size: contain;
             background-repeat: no-repeat;
-            background-color: aqua;
             border-radius: 50px;
             width: 45px;
             height: 45px;
@@ -105,5 +104,12 @@
             background-color: transparent;
             transform: translateY(-5px);
         }
+    }
+}
+
+.card-devider {
+    display: flex;
+    .card-egift-txt {
+        
     }
 }

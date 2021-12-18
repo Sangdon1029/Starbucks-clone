@@ -127,10 +127,9 @@
   z-index: 500px;
   top: 105px;
   left: 10px;
-  background-image: url(/src/img/mark02.png);
+  background-image: url(src/img/mark02.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: aqua;
   border-radius: 50px;
   width: 45px;
   height: 45px;
@@ -155,6 +154,12 @@
   background-color: transparent;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.card-devider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer-cont {
@@ -199,7 +204,7 @@
 .footer-cont .footer-others .others-wrapper::after {
   content: '';
   display: inline-block;
-  background-image: url(src/img/footer_logo.png);
+  background-image: url("/src/img/footer_logo.png");
   margin-top: 30px;
   margin-left: 20px;
   height: 200px;

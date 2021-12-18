@@ -75,8 +75,13 @@ option_btn.addEventListener('mouseleave',function(){
 
 
 const real = document.querySelector("#real")
+const e_gift = document.querySelector("#e-gift")
 const all_check = document.querySelector("#all-check")
 
-if ( real.hasAttribute("checked")){
-    all_check.removeAttribute("checked");
-}
+real.addEventListener("click",function(){
+    all_check.checked = false;
+})
+
+e_gift.addEventListener("click",function(){
+    all_check.checked = false;
+})
