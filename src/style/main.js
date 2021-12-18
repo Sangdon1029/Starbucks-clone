@@ -1,16 +1,17 @@
 //일단은 만들어는 봤는데 이게 아닌것 같습니다. 나중에 고쳐야지;;;
 const btn1 = document.querySelector(".select-btn1")
 const btn2 = document.querySelector(".select-btn2")
+
 btn1.addEventListener('click', function(){
-    if(document.querySelectorAll('.slect-btn2')) {
+    btn1.classList.add('focus');
+    if(btn2.classList.contains('focus')) {
         btn2.classList.remove('focus');
-        btn1.classList.toggle('focus');
 }})
 
 btn2.addEventListener('click', function(){
-    if(document.querySelectorAll('.slect-btn1')) {
+    btn2.classList.add('focus');
+    if(btn1.classList.contains('focus')) {
         btn1.classList.remove('focus');
-        btn2.classList.toggle('focus');
 }})
 
 const dropdown = document.querySelector(".slect-dropdown")
@@ -45,3 +46,37 @@ btn_search.addEventListener('click', function(){
         cont_search.classList.add('on');
     }
 })
+
+
+//detail-asort 상세분류 dispaly 속성
+const btn_assort = document.querySelector(".selet-asort-btn")
+const ul_assort = document.querySelector(".detail-asort")
+const li_assort1 = document.querySelector(".asort_li1")
+const li_assort2 = document.querySelector(".asort_li2")
+const option_btn = document.querySelector(".selet-option-btn")
+
+btn_assort.addEventListener('click', function(){
+    if(ul_assort.classList.contains("on")){
+        ul_assort.classList.remove('on');
+        li_assort1.classList.remove('on');
+        li_assort2.classList.remove('on');
+    } else {
+        ul_assort.classList.add('on');
+        li_assort1.classList.add('on');
+        li_assort2.classList.add('on');
+    }
+})
+
+option_btn.addEventListener('mouseleave',function(){
+    li_assort1.classList.remove('on');
+    li_assort2.classList.remove('on');
+    ul_assort.classList.remove('on');
+})
+
+
+const real = document.querySelector("#real")
+const all_check = document.querySelector("#all-check")
+
+if ( real.hasAttribute("checked")){
+    all_check.removeAttribute("checked");
+}
