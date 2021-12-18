@@ -32,7 +32,7 @@
                         <div class="search-cont">
                             <form action="#">
                                 <input class="search-input" type="search" placeholder="통합검색" name="search">
-                                <button class="search-btn" type="submit" ><i class="fas fa-search search"></i></button>
+                                <button class="search-btn" type="button" ><i class="fas fa-search search"></i></button>
                             </form>
                         </div>
                     </li>
@@ -136,17 +136,20 @@
             </form>
             <div class="selet-option-btn">
                 <!-- 버튼을 누르면 드랍다운 형식으로 만들 예정 -->
-                <button type="button">상세분류</button>
-                    <!-- <ul class="detail-asort">
-                        <li>신규 출시된 메뉴</li>
-                        <li>한정기간 출시되는 시즌성 메뉴</li>
-                    </ul> -->
+                <button class="selet-asort-btn" type="button">상세분류
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                    <ul class="detail-asort">
+                        <li class="asort_li1"><input type="checkbox">신규 출시된 메뉴</li>
+                        <li class="asort_li2"><input type="checkbox">한정기간 출시되는 시즌성 메뉴</li>
+                    </ul>
             </div>
         </section>
         <section class="card-section-cont">
             <!-- 이 부분 부터 SCSS로 관리 하겠습니다. -->
             <h3 class="card-real-txt">실물카드</h3>
-            <ul class="card-item-cont">
+            <!-- fist page -->
+            <ul class="card-item-cont first-page">
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/1.png" alt=""></a>
@@ -162,74 +165,154 @@
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/3.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>2021 진저브레드 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/4.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>2021 스노우맨 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/5.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>2021 메리 크리스마스 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/6.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>2021 크리스마스 트리 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/7.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>2021 홀리데이 워드마크 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/8.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>2021 홀리데이 사이렌 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/9.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>2021 해피 할로윈 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/10.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>스타벅스 캠핑 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/11.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>스타벅스 Drive Thru 카드</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure class="">
                         <a href="#none"><img src="src/img/card-real-img/12.png" alt=""></a>
-                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                        <figcaption>스타벅스 리워드 10주년 카드</figcaption>
                     </figure>
                 </li>
             </ul>
+            <!-- //first page  -->
+            <!-- second page -->
+            <ul class="card-item-cont second-page">
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/1.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/2.png" alt=""></a>
+                        <figcaption>2021 크리스마스 캣츠 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/3.png" alt=""></a>
+                        <figcaption>2021 진저브레드 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/4.png" alt=""></a>
+                        <figcaption>2021 스노우맨 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/5.png" alt=""></a>
+                        <figcaption>2021 메리 크리스마스 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/6.png" alt=""></a>
+                        <figcaption>2021 크리스마스 트리 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/7.png" alt=""></a>
+                        <figcaption>2021 홀리데이 워드마크 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/8.png" alt=""></a>
+                        <figcaption>2021 홀리데이 사이렌 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/9.png" alt=""></a>
+                        <figcaption>2021 해피 할로윈 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/10.png" alt=""></a>
+                        <figcaption>스타벅스 캠핑 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/11.png" alt=""></a>
+                        <figcaption>스타벅스 Drive Thru 카드</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="">
+                        <a href="#none"><img src="src/img/card-real-img/12.png" alt=""></a>
+                        <figcaption>스타벅스 리워드 10주년 카드</figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!-- //second page -->
+
+
+
             <!-- 한번에 보여주는 목록이 너무 많아서 정신이 없다고 생각되어 
             화살표 또는 번호를 누르면 페이지 전환 되는 형식으로 기능 변환 예정 -->
             <ul class="arrow-nav">
                 <li><a href="#none"><i class="fas fa-chevron-left"></i></a></li>
-                <li class="arrow-nav-items"><a href="#none">1</a></li>
-                <li class="arrow-nav-items"><a href="#none">2</a></li>
-                <li class="arrow-nav-items"><a href="#none">3</a></li>
-                <li class="arrow-nav-items"><a href="#none">4</a></li>
-                <li class="arrow-nav-items"><a href="#none">5</a></li>
-                <li class="arrow-nav-items"><a href="#none">6</a></li>
+                <li class="arrow-nav-items"><button type="button" class="arrow_btn1">1</button></li>
+                <li class="arrow-nav-items"><button type="button" class="arrow_btn2">2</button></li>
+                <li class="arrow-nav-items"><button type="button" class="arrow_btn3">3</button></li>
+                <li class="arrow-nav-items"><button type="button" class="arrow_btn4">4</button></li>
+                <li class="arrow-nav-items"><button type="button" class="arrow_btn5">5</button></li>
+                <li class="arrow-nav-items"><button type="button" class="arrow_btn6">6</button></li>
                 <li><a href="#none"><i class="fas fa-chevron-right"></i></a></li>
             </ul>
         </section>

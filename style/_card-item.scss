@@ -1,3 +1,36 @@
+.selet-option-btn {
+    font-size: 13px;
+    .selet-asort-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .detail-asort {
+        li {
+            display: none;
+        }
+    }
+
+    .detail-asort {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        width: 227px;
+        height: 100px;
+        li.on{
+            display: block;
+            width: inherit;
+            height: 40px;
+            padding: 10px;
+            box-shadow: 1px 1px 1px 1px rgba(128, 125, 125, 0.3);
+            margin-bottom: 2px;
+            background-color: white;
+            border-radius: 2px;
+        }
+    }
+}
+
 
 .card-section-cont {
     width: 1100px;
@@ -28,6 +61,9 @@
                 width: 260px;
                 height: auto;
             }
+            figcaption {
+                margin: 20px;
+            }
         }
     }
     .arrow-nav {
@@ -36,9 +72,12 @@
         justify-content: center;
         gap: 10px;
         margin: 40px 0;
-        a {
+        button {
             text-decoration: none;
             font-size: 22px;
+            border: none;
+            background-color: transparent;
+            transform: translateY(-5px);
         }
     }
 }
