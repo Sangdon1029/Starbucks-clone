@@ -236,9 +236,11 @@ a {
     width: 100vw;
     height: 90px;
     background-color: rgb(180, 40, 40);
+    display: flex;
+    justify-content: center;
 }
 .nav-items .sub-nav-items .sub-nav-subtit-cont ul {
-    width: 90%;
+    width: 1050px;
 }
 .nav-items .sub-nav-items .sub-nav-subtit-cont ul li {
     position: relative;
